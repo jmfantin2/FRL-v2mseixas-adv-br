@@ -1,0 +1,33 @@
+baseURL: 'https://www.mauricioseixas.adv.br/'
+languageCode: 'pt-br'
+title: 'Maurício Seixas | Advogado Criminal'
+enableRobotsTXT: true
+defaultContentLanguage: 'pt-br'
+module:
+  disable: true
+
+# Configurações para Sitemap
+sitemap:
+  changefreq: 'weekly'
+  priority: 0.8
+
+# Variáveis do Produto
+params:
+  logo: 'images/logo.png'
+  whatsapp: 'images/whatsapp.png'
+  lawyer: 'images/advogado.jpg'
+  subtitulo: 'MAURÍCIO SEIXAS'
+  resumo: 'Especialista em Direito Criminal, formada pelo Centro Universitário do Planalto de Araxá - UNIARAXA. Com ampla experiência em casos criminais, ela oferece uma defesa dedicada e de alta qualidade. Sua formação acadêmica sólida e seu conhecimento jurídico aprofundado a capacitam a lidar com uma ampla gama de crimes. Com uma abordagem estratégica e compromisso com a justiça, a Advogada Franciele está pronta para proteger seus direitos e lutar incansavelmente pela melhor solução para seu caso criminal. Conte com sua expertise e dedicação para uma representação legal confiável e eficaz.'
+  description: 'Advogado criminal com vasta experiência.'
+  disclaimer:
+    [
+      '- Delegacia, Flagrante e Custódia',
+      '- Flagrantes 24 Horas',
+      '- Defesa Criminal e Recursos',
+      '- Habeas Corpus e Liberdade Provisória',
+      '- Execução Penal',
+      '- Tribunal do Júri',
+    ]
+  cta_texto: 'Entre em contato'
+  cta_link: 'https://api.whatsapp.com/send?phone=5551981386081&text=Ol%C3%A1!%20Gostaria%20de%20conversar%20com%20um%20advogado.'
+  footer_text: '© 2024 Maurício Seixas'

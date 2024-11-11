@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.subtitulo }}" />
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <!-- Link to the Favicon -->
+    <link rel="icon" href="{{ "favicon.png" | relURL }}" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <!-- Logo and Anchor Buttons Section -->
+      <div class="header">
+        <img src="{{ .Site.Params.logo | relURL }}" alt="Logo do Produto" />
+        <!-- Anchor Buttons -->
+        <nav class="anchor-buttons">
+          <a href="#atuacao" class="anchor-link">ATUAÇÃO</a>
+          <a href="#especialista" class="anchor-link">ESPECIALISTA</a>
+          <a href="#contato" class="anchor-link">CONTATO</a>
+        </nav>
+      </div>
+
+      <section id="atuacao"></section>
+
+      <section id="especialista" class="lawyer-info-wrapper">
+        <!-- Banner do Produto ou Criador -->
+        <div class="lawyer-section">
+          <img
+            src="{{ .Site.Params.lawyer | relURL }}"
+            alt="Banner do Produto"
+          />
+        </div>
+
+        <!-- Conteúdo Lateral (Título, Subtítulo, Disclaimer e CTA) -->
+        <div class="info-section">
+          <h2 class="subtitulo">{{ .Site.Params.subtitulo }}</h2>
+          <p class="resumo">{{ .Site.Params.resumo }}</p>
+        </div>
+      </section>
+
+      <section id="atuacao"></section>
+
+      <!--
+      <div class="button-section">
+        <a href="{{ .Site.Params.cta_link }}" class="cta-button" target="_blank"
+          >{{ .Site.Params.cta_texto }}</a
+        >
+      </div>
+      -->
+
+      <!-- Seção de Rodapé -->
+      <footer class="footer-section">
+        <p>
+          &copy; 2024 <strong>Maurício Seixas</strong><br />Todos os direitos
+          reservados.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
