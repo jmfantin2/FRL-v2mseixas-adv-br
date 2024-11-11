@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ .Site.Title }}</title>
     <meta name="description" content="{{ .Site.Params.subtitulo }}" />
-    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-    <!-- Link to the Favicon -->
-    <link rel="icon" href="{{ "favicon.png" | relURL }}" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}"> <link
+    rel="icon" href="{{ "favicon.png" | relURL }}" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
       <!-- Logo and Anchor Buttons Section -->
       <div class="header">
         <img src="{{ .Site.Params.logo | relURL }}" alt="Logo do Produto" />
-        <!-- Anchor Buttons -->
         <nav class="anchor-buttons">
           <a href="#atuacao" class="anchor-link">ATUAÇÃO</a>
           <a href="#especialista" class="anchor-link">ESPECIALISTA</a>
@@ -22,33 +24,90 @@
         </nav>
       </div>
 
-      <section id="atuacao"></section>
+      <section id="intro" class="intro-section">
+        <p>
+          Nosso objetivo é oferecer um atendimento humano e compassivo em casos
+          criminais, proporcionando apoio técnico especializado. Além disso,
+          estamos comprometidos em garantir uma resposta imediata em situações
+          de urgência, a fim de proteger e cuidar das pessoas afetadas. Nossa
+          luta incansável visa assegurar os direitos fundamentais de todos,
+          promovendo justiça e igualdade em nossa sociedade.
+        </p>
+        <div class="button-section">
+          <a
+            href="{{ .Site.Params.cta_link }}"
+            class="cta-button"
+            target="_blank"
+            >ENTRE EM CONTATO</a
+          >
+        </div>
+      </section>
 
-      <section id="especialista" class="lawyer-info-wrapper">
-        <!-- Banner do Produto ou Criador -->
+      <!-- Divisória com Título da Seção -->
+      <div class="section-divider" id="atuacao">
+        <h1 class="section-title">ATUAÇÃO</h1>
+      </div>
+      <!-- Seção de Atuação -->
+      <section class="atuacao-section">
+        <div class="atuacao-card">
+          <h3>Delegacia, Flagrante e Custódia</h3>
+          <p>{{ .Site.Params.atuacao_delegacia }}</p>
+        </div>
+        <div class="atuacao-card">
+          <h3>Flagrantes 24 Horas</h3>
+          <p>{{ .Site.Params.atuacao_flagrantes }}</p>
+        </div>
+        <div class="atuacao-card">
+          <h3>Defesa Criminal e Recursos</h3>
+          <p>{{ .Site.Params.atuacao_defesa }}</p>
+        </div>
+        <div class="atuacao-card">
+          <h3>Habeas Corpus e Liberdade Provisória</h3>
+          <p>{{ .Site.Params.atuacao_habeas }}</p>
+        </div>
+        <div class="atuacao-card">
+          <h3>Execução Penal</h3>
+          <p>{{ .Site.Params.atuacao_execucao }}</p>
+        </div>
+        <div class="atuacao-card">
+          <h3>Tribunal do Júri</h3>
+          <p>{{ .Site.Params.atuacao_tribunal }}</p>
+        </div>
+      </section>
+      <!-- Divisória com Título da Seção -->
+      <div class="section-divider" id="especialista">
+        <h1 class="section-title">Especialista</h1>
+      </div>
+
+      <!-- Seção Especialista -->
+      <section class="lawyer-info-wrapper">
         <div class="lawyer-section">
           <img
             src="{{ .Site.Params.lawyer | relURL }}"
             alt="Banner do Produto"
           />
         </div>
-
-        <!-- Conteúdo Lateral (Título, Subtítulo, Disclaimer e CTA) -->
         <div class="info-section">
           <h2 class="subtitulo">{{ .Site.Params.subtitulo }}</h2>
           <p class="resumo">{{ .Site.Params.resumo }}</p>
         </div>
       </section>
 
-      <section id="atuacao"></section>
-
-      <!--
-      <div class="button-section">
-        <a href="{{ .Site.Params.cta_link }}" class="cta-button" target="_blank"
-          >{{ .Site.Params.cta_texto }}</a
-        >
+      <!-- Divisória com Título da Seção -->
+      <div class="section-divider" id="contato">
+        <h1 class="section-title">CONTATO</h1>
       </div>
-      -->
+      <!-- Seção de Contato -->
+      <section class="contato-section">
+        <p class="contato-info">
+          Avenida Getúlio Vargas, 513, Escritório, Centro • Araxá/MG - CEP:
+          38.183-084.
+        </p>
+        <p class="contato-info"><strong>WhatsApp:</strong> (51) 981 386 081</p>
+        <p class="contato-info">
+          <strong>E-mail:</strong> mauricioseixas@hotmail.com
+        </p>
+      </section>
 
       <!-- Seção de Rodapé -->
       <footer class="footer-section">
@@ -57,6 +116,26 @@
           reservados.
         </p>
       </footer>
+      <a
+        href="https://api.whatsapp.com/send?phone=5551981386081&text=Ol%C3%A1!%20Gostaria%20de%20conversar%20com%20um%20advogado."
+        target="_blank"
+        style="
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #fff;
+          color: white;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          display: flex;
+          z-index: 1000;
+          overflow: hidden;
+        "
+      >
+        <img src="{{ "images/whatsapp.png" | relURL }}" alt="WhatsApp logo"
+        style="max-width: 60px;">
+      </a>
     </main>
   </body>
 </html>
