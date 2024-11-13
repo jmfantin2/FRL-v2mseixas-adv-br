@@ -18,7 +18,7 @@ params:
   lawyer: 'images/advogado.jpg'
   subtitulo: 'Maurício Seixas'
   resumo: 'Especialista em Direito Criminal, formada pelo Centro Universitário do Planalto de Araxá - UNIARAXA. Com ampla experiência em casos criminais, ela oferece uma defesa dedicada e de alta qualidade. Sua formação acadêmica sólida e seu conhecimento jurídico aprofundado a capacitam a lidar com uma ampla gama de crimes. Com uma abordagem estratégica e compromisso com a justiça, a Advogada Franciele está pronta para proteger seus direitos e lutar incansavelmente pela melhor solução para seu caso criminal. Conte com sua expertise e dedicação para uma representação legal confiável e eficaz.'
-  description: 'Advogado criminal com vasta experiência.'
+  description: 'Advogado criminal especializado em defesa criminal em Porto Alegre. Atuação em casos de crimes graves e defesa de clientes em tribunais.'
   disclaimer:
     [
       '- Delegacia, Flagrante e Custódia',
