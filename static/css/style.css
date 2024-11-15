@@ -396,7 +396,7 @@ main {
 }
 
 .contato-info strong {
-  color: var(--accent-secondary);
+  color: var(--accent-primary);
 }
 
 /* Efeitos de Transição para Elementos */
