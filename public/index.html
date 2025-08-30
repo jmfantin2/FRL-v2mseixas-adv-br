@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+	<meta name="generator" content="Hugo 0.149.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ .Site.Title }}</title>
-    <meta name="description" content="{{ .Site.Params.subtitulo }}" />
-    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}"> <link
-    rel="icon" href="{{ "favicon.png" | relURL }}" type="image/x-icon" />
+    <title>Maurício Seixas | Advogado Criminal</title>
+    <meta name="description" content="Maurício Seixas" />
+    <link rel="stylesheet" href="/css/style.css"> <link
+    rel="icon" href="/favicon.png" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
       rel="stylesheet"
@@ -14,34 +15,22 @@
   </head>
   <body>
     <main>
-      <!-- Logo and Anchor Buttons Section -->
+      
       <div class="header">
-        <img src="{{ .Site.Params.logo | relURL }}" alt="Logo do Produto" />
+        <img src="/images/logo.png" alt="Logo do Produto" />
         <nav class="anchor-buttons">
           <a href="#missao" class="anchor-link">MISSÃO</a>
           <a href="#contato" class="anchor-link">CONTATO</a>
         </nav>
       </div>
 
-      <!--
-      <section id="intro" class="intro-section">
-        <p>{{ .Site.Params.intro }}</p>
-        <div class="button-section">
-          <a
-            href="{{ .Site.Params.cta_link }}"
-            class="cta-button"
-            target="_blank"
-            >ENTRE EM CONTATO</a
-          >
-        </div>
-      </section>
-      -->
+      
 
-      <!-- Divisória com Título da Seção -->
+      
       <div class="section-divider">
         <h1 class="section-title">ÁREAS DE ATUAÇÃO</h1>
       </div>
-      <!-- Seção de Atuação -->
+      
       <section class="atuacao-section">
         <div class="atuacao-card">
           <h3>Tribunal do Júri</h3>
@@ -71,11 +60,11 @@
           <h3>Direito Bancário</h3>
         </div>
       </section>
-      <!-- Divisória com Título da Seção -->
+      
       <div class="section-divider" id="missao">
         <h1 class="section-title">Missão, Visão e Valores</h1>
       </div>
-      <!-- Seção de Missão, Visão e Valores -->
+      
       <section id="principles" class="principles-section">
         <div class="principle-column">
           <div class="principle-card">
@@ -126,12 +115,12 @@
         </div>
       </section>
 
-      <!-- Divisória com Título da Seção -->
+      
       <div class="section-divider" id="advocacia-pro-bono">
         <h1 class="section-title">ADVOCACIA PRO BONO</h1>
       </div>
 
-      <!-- Seção de Advocacia Pro Bono -->
+      
       <section class="advocacia-pro-bono-section">
         <div class="pro-bono-banner">
           <a
@@ -143,39 +132,39 @@
         </div>
       </section>
 
-      <!-- Divisória com Título da Seção -->
+      
       <div class="section-divider" id="contato">
         <h1 class="section-title">CONTATO</h1>
       </div>
 
-      <!-- Seção de Contato -->
+      
       <section class="contato-section">
         <p class="contato-info"><strong>WhatsApp:</strong> (51) 994 830 348</p>
         <p class="contato-info">
           <strong>E-mail:</strong> mauriciorseixas@gmail.com
         </p>
       </section>
-      <!-- Seção Especialista -->
+      
       <section class="lawyer-info-wrapper">
-        <!-- Missão, Visão e Valores -->
+        
 
-        <!-- Imagem e Informações do Advogado -->
+        
         <div class="lawyer-section">
           <img
-            src="{{ .Site.Params.lawyer | relURL }}"
+            src="/images/advogado.jpg"
             alt="Banner do Produto"
           />
         </div>
         <div class="info-section">
           <p class="resumo" style="margin-bottom: 10px">
-            <strong>Maurício Seixas</strong>{{ .Site.Params.resumo1 }}
+            <strong>Maurício Seixas</strong> é advogado criminalista, reconhecido por oferecer uma advocacia personalizada e de excelência. Graduado pela PUCRS em 2007, traz consigo a experiência de 28 anos de atuação no Exército Brasileiro, onde consolidou valores como ética, estratégia e lealdade, que hoje norteiam sua prática jurídica.
           </p>
 
-          <p class="resumo">{{ .Site.Params.resumo2 }}</p>
+          <p class="resumo">Comprometido com o aprimoramento contínuo, está cursando a especialização em Tribunal do Júri, reforçando sua expertise em defesa técnica de alto nível. Sua atuação se destaca pela abordagem minuciosa e artesanal, com atenção rigorosa aos detalhes de cada caso, sempre focada na proteção dos direitos e na busca pelos melhores interesses de seus clientes.</p>
         </div>
       </section>
 
-      <!-- Seção de Rodapé -->
+      
       <footer class="footer-section">
         <p>
           &copy; 2024 <strong>Maurício Seixas</strong><br />Todos os direitos
@@ -199,7 +188,7 @@
           overflow: hidden;
         "
       >
-        <img src="{{ "images/whatsappGrad.png" | relURL }}" alt="WhatsApp logo"
+        <img src="/images/whatsappGrad.png" alt="WhatsApp logo"
         style="max-width: 60px;">
       </a>
       <a
@@ -217,7 +206,7 @@
           overflow: hidden;
         "
       >
-        <img src="{{ "images/phonecallGrad.png" | relURL }}" alt="WhatsApp logo"
+        <img src="/images/phonecallGrad.png" alt="WhatsApp logo"
         style="max-width: 60px;">
       </a>
     </main>
